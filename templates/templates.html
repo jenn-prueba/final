@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<title>¡Que onda!</title>
+</head>
+<body>
+	{% include 'navbar.html' %}
+	<!--Las llaves dobles indican el recibimineto de una variable desde python-->
+	<!--<div class="container-md">
+		<h1 class="alert alert-primary" role= "alert">Bienvenido {{nombre}}</h1>
+	</div> -->
+	<br>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		
+	<img src="{{url_for('static', filename='a.gif' )}}" width="200" height="300" align="right" HSPACE="" VSPACE="100">
+	<img src="{{url_for('static', filename='io.jpg' )}}" width="400" height="500" align="center" HSPACE="250" VSPACE="10">
+	<img src="{{url_for('static', filename='a.gif' )}}" width="200" height="300" align="left" HSPACE="20" VSPACE="100">
+	{% include 'footer.html' %}
+	
+</body>
+</html>

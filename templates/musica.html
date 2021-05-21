@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<title>Mi música</title>
+	<style type="text/css">
+		h1{
+			border-color: salmon;
+			text-align-last: center; /*alineación del texto*/
+			border-style: dashed;
+			letter-spacing: 1px;
+			word-spacing: 15px;
+			font-family: serif;
+
+		}
+		p{
+		
+			font-family: serif;
+			text-align: center;
+			font-style: cursive;
+			font-size: 20px;
+			padding: 12px;
+		
+		}
+		h2{
+			
+			font-family: serif;
+			text-align: center; /* primer paramentro horizontal,sombreado segundo parametro vertical para la sombra*/
+		}
+	</style>
+</head>
+<body>
+	{% include 'navbar.html' %}
+	<br>
+	<img src="{{url_for('static', filename='r.gif' )}}" width="150" height="150" align="right">
+	<h1>Creedence Clearwater Revival</h1>
+	<h2>CCR</h2>
+	<br><br>
+
+	<img src="{{url_for('static', filename='ccr.gif' )}}" width="250" height="350" align="left" >
+	<p>Creedence Clearwater Revival o Creedence (a veces estilizado como CCR) fue una banda estadounidense de rock, popular a fines de la década de 1960 y comienzos de los 70. Considerada una de las mejores bandas de la historia, es una de las más populares e influyentes.
+
+	El estilo musical de Creedence combinó el rock and roll con otros géneros tales como el blues, el góspel, el country y el swamp rock. La denominación genérica roots rock, se refiere a la música inspirada en las raíces tradicionales de la música norteamericana, no existía en la época en que se formó CCR, pero hoy en día sería perfectamente aplicable a su estética.
+
+	Por su estilo de música tan peculiar, se les considera los reyes de la carretera, pues su música te lleva a imaginarte que estás conduciendo por una autopista.En sus primeros álbumes tenía un sonido bastante psicodélico y considerados como la banda precursora del Grunge.
+
+	La revista Rolling Stone los ubicó en el puesto 82 de los mejores artistas de la historia.</p>
+	<br></br><br>
+
+
+	{% include 'footer.html' %}
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>

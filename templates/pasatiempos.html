@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<title>Pasatiempos</title>
+	<style type="text/css">
+		
+		p{
+			text-align: center;
+			text-indent: 50px;
+			line-height: 2;
+			
+			font-family: serif;
+			white-space:5px; /*Elimina los saltos de linea*/
+			padding: 25px;
+			border-style: dotted;
+			border-width: 5px;
+			border-color: pink;
+			font-size: 20px;
+		}
+		</style>
+
+</head>
+<body>
+	{% include 'navbar.html' %}
+	
+
+	<p class="dotted">Relamente no tengo muchos pasatiempos, la mayor parte del tiempo la paso en clases y haciendo trabajos de la escuela, basicamente me la paso siempre en mi laptop (mi fiel compañera), por otro lado cuando tengo tiempo libre, me gusta salir con mis amigas a pasear pero otras veces prefiero quedarme en casa viendo peliculas en compañia de mis perros, disfruto mucho el tiempo conmigo misma, hacerme tratamientos en el cabello, mascarillas y por supuesto escuchar música.</p>
+	
+	<center><img src="{{url_for('static', filename='i.gif' )}}" width="200" height="200">
+		<img src="{{url_for('static', filename='lap.gif' )}}" width="330" height="330"  ></center>
+	
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	{% include 'footer.html' %}
+
+</body>
+</html>
